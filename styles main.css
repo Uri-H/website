@@ -1,0 +1,245 @@
+
+/*
+#D7263D
+#FC9E4F
+#EAF2EF
+#1B9AAA
+#FF9000
+RED BROWN WHITE BLUE ORANGE
+*/
+:root{
+    --timeline-width: 2px;
+}
+*{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.title{
+    font-family: 'Rochester', cursive;
+    text-align: center;
+    font-size:100px;
+}
+body {
+    margin: 0;
+}
+
+.back{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+/*.bowtie{*/
+/*    position: absolute;*/
+/*    top: 100px;*/
+/*    left: 20%;*/
+/*    width: 30%;*/
+/*    height: 60%;*/
+/*    object-fit: cover;*/
+/*    overflow: hidden;*/
+/*}*/
+
+.profile-pic{
+    display: block;
+    margin: 100px auto;
+}
+
+.mets{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.side-list{
+    position: fixed;
+    top: 100px;;
+    left: 0;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+/*    border-style: outset;*/
+}
+
+.list{
+    border-style: solid;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.intro-text{
+    position: absolute;
+    top: 200px;
+    left:60%;
+    width: 300px;
+    height: 100px;
+    color: white;
+}
+
+.project-container1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+.project-container2{
+/*    display: flex;*/
+    display: none;
+    flex-direction: row;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.project-image {
+    width: 75%;
+    height: 75%;
+    border-radius:10px;
+    margin-left:50px;
+}
+
+.language{
+    width: 100px;
+    height: 100px;
+    padding-left: 50px;
+}
+#python{
+    width:250px;
+}
+.languages{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*hr.new4 {*/
+/*  border: 1px solid red;*/
+/*}*/
+
+.top-row-dot {
+  top: calc(50% + 10px + var(--timeline-width));
+}
+.bottom-row-dot {
+  bottom: calc(50% + 10px + var(--timeline-width));
+}
+
+.top-row-dot, .bottom-row-dot{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+}
+
+.timeline{ /* could change this to double columns for each with alternating start columns */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+/*    border: 4px solid black;*/
+    gap: 0px 0px;
+/*    content:'';*/
+/*    border: 10px solid red;*/
+/*    display:flex;*/
+/*    flex-direction: row;*/
+/*    position: relative;*/
+/*    justify-content: space-evenly;*/
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:100px;
+/*    position:relative;*/
+}
+.jobrow1{
+/*    border 2px solid red;*/
+    border-bottom: var(--timeline-width) solid black;
+}
+.jobrow2{
+/*    border 2px solid red;*/
+    border-top: var(--timeline-width) solid black;
+}
+.jobrow1, .jobrow2{
+/*    border: 4px solid blue;*/
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+/*.bar {*/
+/*  height: 4px;*/
+/*  background: #eee;*/
+/*  width: 100%;*/
+/*  position: relative;*/
+/*  top: 13px;*/
+/*  left: 0;*/
+/*}*/
+.sar-content, .enclave-content, .momath-content, .census-content{
+    display:none;
+    white-space: normal;
+}
+.job-content:hover{
+    display:flex;
+}
+
+.timeline-instructions{
+    color: gray;
+    margin-left: 43%;
+}
+
+.education{
+    display:flex;
+    flex-direction:row;
+}
+.education-details{
+    display:inline-grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0px 66%;
+/**/
+/*    flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:3%;
+}
+.qc-logo{
+    width:300px;
+    height:300px;
+    justify-content: center;
+    padding-left:30%;
+}
+
+.degree{
+    white-space: pre-wrap;
+}
+
+
+
+footer{
+    background: #D7263D;
+    color: #FC9E4F;
+    display:flex;
+}
+
+.content-list{
+    list-style-type:none;
+    display:flex;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.bottom a {
+    color:#FC9E4F;
+}
+.bottom a:hover{
+    text-decoration:none;
+}
+
+li{
+    padding-right:20px;
+}
